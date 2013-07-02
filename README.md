@@ -39,5 +39,10 @@ $ bundle install
 
 ## Vagrant up
 ```
+$ export SSH_PRIVATE_KEY_PATH=~/.ssh/id_rsa
+$ export AWS_ACCESS_KEY_ID=my_key
+$ export AWS_SECRET_ACCESS_KEY=my_secreat
+$ export AWS_KEYPAIR_NAME=my_keypair
+
 $ vagrant up --provider=aws
 ```
