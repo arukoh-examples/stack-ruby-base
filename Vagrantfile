@@ -38,7 +38,6 @@ chmod 440 /etc/sudoers.d/999-vagrant-cloud-init-requiretty
     chef.json = {
       rvm: {
         default_ruby: "ruby-1.9.3-p448",
-#        rubies: ["1.9.3"],
         global_gems: [
           { name: 'bundler' }
         ]
