@@ -26,7 +26,7 @@ https://github.com/mitchellh/vagrant-aws/blob/master/README.md#quick-start
 
 ## git clone & bundle install
 ```
-$ https://github.com/arukoh/stack-ruby-base.git
+$ git clone https://github.com/arukoh/stack-ruby-base.git
 $ cd stack-ruby-base
 $ bundle install
 ```
