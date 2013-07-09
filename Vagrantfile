@@ -33,13 +33,16 @@ chmod 440 /etc/sudoers.d/999-vagrant-cloud-init-requiretty
   config.berkshelf.enabled        = true
 
   config.vm.provision :chef_solo do |chef|
-    chef.add_recipe "rvm::system"
+    chef.add_recipe "rvm::user"
 
     chef.json = {
       rvm: {
-        default_ruby: "ruby-1.9.3-p448",
-        global_gems: [
-          { name: 'bundler' }
+        user_installs: [
+          {
+            user:         "ec2-user",
+            default_ruby: "ruby-1.9.3-p448",
+            global_gems:  [ { name: 'bundler' } ]
+          }
         ]
       }
     }
